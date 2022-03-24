@@ -14,15 +14,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(../src/CSS_Elements/fondo-de-pantalla-de-1920x1080.-imagen-hd-1080p-de-rick-y-morty-768x432.jpg);
+  /* background-size: contain;
+  background-attachment: fixed; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
+
+.Title {
+  -webkit-text-stroke: 4px rgba(6, 255, 0, 0.2);
+  font-size: 50px;
+  color: black;
+
+}
+
 
 .App-link {
   color: #61dafb;
@@ -32,7 +42,75 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+img {
+  width: 150px;
+  border-radius: 60%;
+}
+
+
+.input-search {
+
+  margin: 30px;
+}
+
+
+.mini-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px 0px 0px;
+  box-shadow: 0px 8px 16px rgba(6, 255, 0, 0.2);
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+
+.mini-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+
+.input-search {
+  padding: 20px 20px 20px 10px;
+  border: black solid 0.2px;
+  border-radius: 10px;
+  background: rgba(148, 252, 19, 0.3);
+  width: 250px;
+  height: 10px;
+  margin: 20px;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  box-shadow: 0px 8px 16px rgba(6, 255, 0, 0.2);
+
+}
+
+.input-search::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 100px;
+  height: 50%;
+  width: 100%;
+  border-radius: 2px;
+  padding: 10px 50px 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
