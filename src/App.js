@@ -1,7 +1,7 @@
 import './App.css';
 import { useRef, useState, useEffect } from 'react';
-import { Input } from "./components/Input";
-import { MiniCard } from "./components/MiniCard";
+import { Input } from "./components/Input/Input";
+import { MiniCard } from "./components/MiniCard/MiniCard";
 
 
 
@@ -29,18 +29,36 @@ function App() {
   };
   
   return (
+
+
     <div className="App" >
+        
+      
+      {/* NAVBAR-----OPEN */}
+      <div className='navbar-container'>
+        <a>
+          <h2 className='logo'>LOGO</h2>
+        </a>
+
+        <div className='pages-container'>
+          
+          <a>
+            <h2>User</h2>
+          </a>
+
+          <a>
+            <h2>Login</h2>
+          </a>
+                      
+        </div>
+
+      </div>
+
+      {/* NAVBAR----CLOSE */}
+
+      
       <header className="App-header">
         
-        <nav className='nav-bar'>
-          <a href='' className='Logo'>Logo</a>
-          <ul className='nav-menu'>
-            <li className='nav-menu-item'> <a href='' className=''></a> </li>
-            <li className='nav-menu-item'> <a href='' className=''></a> </li>
-            <li className='nav-menu-item'> <a href='' className=''></a> </li>
-            <li className='nav-menu-item'> <a href='' className=''></a> </li>
-          </ul> 
-        </nav>
         
         <h1 className='Title'>RICK & MORTY CHARACTERS</h1>
 

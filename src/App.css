@@ -114,3 +114,38 @@ img {
   justify-content: center;
   text-align: center;
 }
+
+/*NAVBAR CSS*/
+.navbar-container {
+  height: 75px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pages-container {
+  display: flex;
+  padding: 2px 13px;
+}
+
+.logo {
+  padding: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 10px;
+  padding: 1px 2px;
+}
+
+h2:hover {
+  border-bottom: 1px solid rgba(6, 255, 0, 0.2);
+  cursor: pointer;
+}
+
+/*NAVBAR CLOSE*/
